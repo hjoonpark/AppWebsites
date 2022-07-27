@@ -1,0 +1,63 @@
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    font-size: 17px;
+    width: 50%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 10px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-store-btn {
+      position:relative;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #0070c9;
+      border-radius: 8px;
+      width: 200px;
+      height: 35px;
+      background: white;
+      color: #0070c9;
+      cursor: pointer;
+  }
+  .grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 10px;
+    align-items: stretch;
+  }
+  .grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  /* Style each tab content individually */
+  #LoopTimer {background-color:#EE2D43;}
+  #QuickClipboard {background-color: #f68822;}
+
+  html *
+{
+  font-family: Tahoma;
+}
