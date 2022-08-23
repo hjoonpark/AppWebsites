@@ -1,19 +1,19 @@
 /* Style the tab buttons */
 .tablink {
-    background-color: #555;
+    background-color: #777;
     color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 16px 16px;
-    font-size: 17px;
+    padding: 5px 5px;
+    font-size: 15px;
     width: 50%;
   }
   
   /* Change background color of buttons on hover */
   .tablink:hover {
-    background-color: #777;
+    background-color: #333;
   }
   
   /* Set default styles for tab content */
@@ -22,28 +22,21 @@
     display: none;
     padding: 10px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .tab-selected {
+    background-color:black;
   }
   .btn-container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .app-store-btn {
-      position:relative;
-      border-width: 1px;
-      border-style: solid;
-      border-color: #0070c9;
-      border-radius: 8px;
-      width: 200px;
-      height: 35px;
-      background: white;
-      color: #0070c9;
-      cursor: pointer;
-  }
   .grid { 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
     align-items: stretch;
   }
@@ -53,10 +46,24 @@
     max-width: 100%;
     border-radius: 10px;
   }
+  .grid img:hover {
+    margin:0;
+    transform: scale(1.25);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
   /* Style each tab content individually */
-  #LoopTimer {background-color:#EE2D43;}
-  #QuickClipboard {background-color: #f68822;}
-
+  .LoopTimer-tab {
+    border-top-left-radius: 20px;
+  }
+  .QuickClipboard-tab {
+    border-top-right-radius: 20px;
+  }
+  #LoopTimer-content, #QuickClipboard-content {
+    background-color: black;
+  }
   html *
 {
   font-family: Tahoma;

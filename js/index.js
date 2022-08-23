@@ -14,12 +14,15 @@ function showApp(name, element) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
-      tablinks[i].removeAttribute("id");
+      tablinks[i].classList.remove("tab-selected");
     }
   
     // Add the specific color to the button used to open the tab content
-    element.id = name;
+    element.classList.add("tab-selected");
   }
   
+  function showRawImage(element){
+    window.open(element.src);
+  }
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();

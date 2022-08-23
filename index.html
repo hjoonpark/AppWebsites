@@ -7,42 +7,38 @@
 <body>
 
 
-<button class="tablink" onclick="showApp('LoopTimer', this)" id="defaultOpen">Loop Timer</button>
-<button class="tablink" onclick="showApp('QuickClipboard', this)">Quick Clipboard</button>
-<div id="LoopTimer" class="tabcontent">
+<button class="tablink LoopTimer-tab" onclick="showApp('LoopTimer-content', this)" id="defaultOpen">
+  <img src="images/loop-timer.png" alt="" style="width: 40px; height: 40px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;">
+  Loop Timer
+</button>
+<button class="tablink QuickClipboard-tab" onclick="showApp('QuickClipboard-content', this)" id="QuickClipboard-tab"">
+  <img src="images/quick-clipboard.png" alt="" style="width: 40px; height: 40px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;">
+  Quick Clipboard
+</button>
+<div id="LoopTimer-content" class="tabcontent">
   <div class="btn-container">
-    <button class="app-store-btn" aria-label="View in Mac App Store" type="button" onclick="window.open(
-      'https://apps.apple.com/us/app/loop-timer-repeat-simple/id1624426570?mt=12',
-      '_blank'
-    );">
-      View in Mac App Store ↗
-    </button>
+    <a href="https://apps.apple.com/us/app/loop-timer-repeat-simple/id1624426570?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1653523200&h=834d48504e53a5e3a9e4263b6789a37e" alt="Download on the Mac App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
   </div>
   <br>
   <div class="grid">
-    <img src="images/LoopTimer/1.jpg" class="image" alt="Image">
-    <img src="images/LoopTimer/2.jpg" class="image" alt="Image">
-    <img src="images/LoopTimer/3.jpg" class="image" alt="Image">
-    <img src="images/LoopTimer/4.jpg" class="image" alt="Image">
+    <img src="images/LoopTimer/1.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/LoopTimer/2.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/LoopTimer/3.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/LoopTimer/4.jpg" onclick="showRawImage(this)" class="image" alt="Image">
   </div>
 </div>
 
-<div id="QuickClipboard" class="tabcontent">
+<div id="QuickClipboard-content" class="tabcontent">
   <div class="btn-container">
-    <button class="app-store-btn" aria-label="View in Mac App Store" type="button" onclick="window.open(
-      'https://apps.apple.com/us/app/loop-timer-repeat-simple/id1624426570?mt=12',
-      '_blank'
-    );">
-      View in Mac App Store ↗
-    </button>
+      <a href="https://apps.apple.com/us/app/quick-clipboard-copy-paste/id1636064726?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1658966400&h=543f948abe4fc9d7d6f733f9bcf397c3" alt="Download on the Mac App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
   </div>
   <br>
   <div class="grid">
-    <img src="images/QuickClipboard/1.jpg" class="image" alt="Image">
-    <img src="images/QuickClipboard/2.jpg" class="image" alt="Image">
-    <img src="images/QuickClipboard/3.jpg" class="image" alt="Image">
-    <img src="images/QuickClipboard/4.jpg" class="image" alt="Image">
-    <img src="images/QuickClipboard/5.jpg" class="image" alt="Image">
+    <img src="images/QuickClipboard/1.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/QuickClipboard/2.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/QuickClipboard/3.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/QuickClipboard/4.jpg" onclick="showRawImage(this)" class="image" alt="Image">
+    <img src="images/QuickClipboard/5.jpg" onclick="showRawImage(this)" class="image" alt="Image">
   </div>
 </div>
 
